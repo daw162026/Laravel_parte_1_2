@@ -1,0 +1,128 @@
+{
+  "info": {
+    "_postman_id": "5f80f022-afae-4d50-98d2-dc11c9547376",
+    "name": "Prueba API",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59213236",
+    "_collection_link": "https://go.postman.co/collection/59213236-5f80f022-afae-4d50-98d2-dc11c9547376?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "POST Address",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "country",
+              "value": "Spain",
+              "type": "text"
+            },
+            {
+              "key": "zipcode",
+              "value": "02",
+              "type": "text"
+            },
+            {
+              "key": "email",
+              "value": "d@gmail.com",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/address",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "address"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show Address",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/address/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "address",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show Address_User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/address/1/user",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "address",
+            "1",
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/user/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "user",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
